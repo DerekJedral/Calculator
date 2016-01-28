@@ -1,0 +1,43 @@
+﻿<Window x:Class="MyCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="410" ResizeMode="NoResize" Background="AliceBlue" KeyDown="keyInput" KeyUp="checkShift">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Button Content="0" Grid.Column="0" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="181" Click="buttonClick" Grid.ColumnSpan="2"/>
+        <Button Content="-" Grid.Column="3" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="(" Grid.Column="0" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content=")" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="^" Grid.Column="2" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="+" Grid.Column="3" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="*" Grid.Column="3" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="/" Grid.Column="3" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="9" Grid.Column="2" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="6" Grid.Column="2" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="3" Grid.Column="2" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="=" Grid.Column="3" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="80" Click="buttonClick" IsDefault="True"/>
+        <Button Content="8" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="5" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="2" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="." Grid.Column="2" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="7" Grid.Column="0" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="4" Grid.Column="0" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <Button Content="1" Grid.Column="0" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Click="buttonClick"/>
+        <TextBlock x:Name="DisplayLine" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" Background="DimGray"/>
+        <TextBlock x:Name="MainDisplay" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="90" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="72" Background="DimGray"/>
+    </Grid>
+</Window>
